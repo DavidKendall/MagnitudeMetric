@@ -601,7 +601,7 @@ Currently, much swarm research uses field effects as the method of modelling int
 \end{figure}
 
 \section{Inter-agent vector magnitude effect on internal movement}\label{Section:StabilityMagnitude}
-Figure \ref{methods:Stability5} shows the cohesion and repulsion vector contributions to $v_c(b)$ and $v_r(b)$ due to neighbour $b'$, as given in (\ref{eq:FlyToCentre1}, \ref{eq:Repulsion1}). Notice that the vectors are along the line of separation $bb'$. \\
+Figure \ref{methods:Stability5} shows the cohesion and repulsion vector contributions to $v_c(b)$ and $v_r(b)$ due to neighbour $b'$, as given in (Equations \ref{eq:FlyToCentre1} and \ref{eq:Repulsion1}). Notice that the vectors are along the line of separation $bb'$. \\
 
 %% Equation (\ref{eq:Neighbours1}) identifies the set of agents that are neigbours of $b$.
 %% 
@@ -612,7 +612,7 @@ Figure \ref{methods:Stability5} shows the cohesion and repulsion vector contribu
 Equation (\ref{eq:FlyToCentre1}) identifies the resultant cohesion effect of all the neighbours of $b$. $nbr(.)$ returns a set of all the agents in the swarm that are a neighbour of $b$. A neighbour is any agent that fails within the cohesion field.
 
 \begin{equation}\label{eq:FlyToCentre1}
-v_{c}(b) = \frac{\mathlarger{\sum_{b' \in nbr(b)}}{bb'}}{|nbr(b)|}
+v_{c}(b) = \frac{1}{|nbr(b)|}\left({\mathlarger{\sum_{b' \in nbr(b)}}{bb'}}\right)
 \end{equation}‎
 
 Equation (\ref{eq:Repulsion1}) identifies the resultant repulsion effect of all the neighbours of $b$ where $rep(.)$ returns a set of all agents that are within the repulsion field.
@@ -620,7 +620,7 @@ Equation (\ref{eq:Repulsion1}) identifies the resultant repulsion effect of all 
 \begin{equation}
 \label{eq:Repulsion1}
 v_{r}(b) =‎ -
-\frac{1}{|R(b)|}
+\frac{1}{|rep(b)|}
 \left(
 \mathlarger{\mathlarger{\sum_{b' \in rep(b)}}}
 {\left( 1-\frac{|bb'|}{R_b} \right)}
@@ -676,7 +676,7 @@ Speed & 20 & units/s\\  \hline
 \end{center}
 \end{table}
 
-Figure~\ref{methods:Stability1} shows two agents within each other's cohesion fields but sufficiently distant to be outside of the repulsion fields. In this case $|k_cv_c| > 0$ and $|k_rv_r| = 0$: the result is the agent's resultant magnitudes cause the agents to move towards each other. Table~\ref{tab:SampleReplusion0} shows the repulsion magnitude with a value of 0. The only influence on the agent pairs are cohesive vectors. 
+Figure~\ref{methods:Stability1} shows two agents within each other's cohesion fields but sufficiently distant to be outside of the repulsion fields. In this case $|k_cv_c| > 0$ and $|k_rv_r| = 0$: the result is the agent's resultant magnitude $v(b$  cause the agent to move towards is neighbour $b'$. Likewise the neighbours resultant magnitude $v(b')$ will cause the agent to move towards $b$. Table~\ref{tab:SampleReplusion0} shows the repulsion magnitude with a value of 0. The only influence on the agent pairs are cohesive vectors. 
 
 \begin{figure}%[H]
 \begin{center}
@@ -771,7 +771,7 @@ Log &	Id &	N.Id &	Distance &	{\color{green}Cohesion} &	{\color{red}Repulsion} 	\
 \end{table}
 
 \section{Internal movement and the null vector}\label{metric:StabilityNullVector}
-When the two vectors (cohesion and repulsion) have magnitudes that are equal and opposite they produce a null vector. This indicates that two agents are optimally spaced for a given set of conditions. Although the agents are at an optimum position it does not mean the swarm is optimally distributed. If a swarm is in a confined space it is possible for an optimum position to be created where the vector magnitude is positive and there is a compression effect. This phenomenon is used in the identification of the emergent behaviour of \textit{area flooding}.  
+When the two vectors (cohesion and repulsion) have magnitudes that are equal and opposite they produce a null vector. This indicates that two agents are optimally spaced for a given set of conditions. Although the agents are at an optimum position it does not mean the swarm is optimally distributed. If a swarm is in a confined space it is possible for an optimum position to be created where the vector magnitude is affected by a compression effect. This phenomenon is used in the identification of the emergent behaviour of \textit{area flooding}.  
 
 If we consider the equilibrium state (Figure~\ref{methods:Stability4}) the resultant vector of $b$ is $(0,0)$. A null vector cannot be normalised to produce a directional vector ($\hat{v} = \frac{v}{|v|}$ if $v\neq0$; $0$ if $v=0$) The effect of the resultant magnitude being a null vector is that the agent will remain stationary. If all agent pairs are in this condition the swarm will stop moving~(Figure~\ref{methods:StabilityNullVector}).
 
@@ -807,7 +807,7 @@ v(b) = k_cv_{c}(b) + k_rv_{r}(b) + k_dv_{d}(b)
 \end{figure}
 
 \section{Residual internal movement (Jitter)}\label{metric:Jitter}
-Due to the dynamic nature of a swarm maintaining optimum internal movement as in~(Figure \ref{methods:StabilityNullVector}) a stationary swarm is highly unlikely. The agent pairs will fluctuate between the 3 states~(Figures~\ref{methods:Stability2}, \ref{methods:Stability3} and \ref{methods:Stability4}). This alternation between the states is \textit{jitter}. The degree to which this variation occurs can be measured using either the change in distance between the agent pairs, or the change in the resultant magnitude between the agent pairs. Jitter is motion that is produced to maintain the structure of a swarm. A coordination algorithm that produces minimal jitter is generally more desirable. Jitter (the fluctuation in and between the states) is an indication of the efficiency of an algorithm and an integral component of a swarms measurable behaviour.
+Due to the dynamic nature of a swarm, maintaining optimum internal movement as in~Figure \ref{methods:StabilityNullVector} is highly unlikely. The agent pairs will fluctuate between the 4 states~(Figures~\ref{methods:Stability1}, \ref{methods:Stability2}, \ref{methods:Stability3} and \ref{methods:Stability4}). This alternation between the states is \textit{jitter}. The degree to which this variation occurs can be measured using either the change in distance between the agent pairs, or the change in the resultant magnitude between the agent pairs. Jitter is motion that is produced to maintain the structure of a swarm. A coordination algorithm that produces minimal jitter is generally more desirable. Jitter (the fluctuation in and between the states) is an indication of the efficiency of an algorithm and an integral component of a swarms measurable behaviour.
 
 \section{Magnitude based metric\label{section:MagnitudeDynamics}}
 Magnitude based internal movement (\textit{agent resultant magnitude}) is measured by identifying the balance between the repulsion and cohesion between agents. `Jitter' in the case of the \textit{agent resultant magnitude} metric is measured as the variance of the magnitude lengths created by the agents. The identification of this variance produces the clarifying part of the \textit{agent resultant magnitude} metric.
@@ -819,11 +819,6 @@ If the \textit{agent resultant magnitude} is a negative value (absolute values w
 The \textit{agent resultant magnitude} on its own does not give a complete measure of a swarm's internal state. There needs to be a qualifying component to the metric  that identifies the degree of deviation in the resultant magnitude, this is the \textit{jitter}. The smaller the degree of deviation the more uniform the structure of the swarm. These two components identify the degree to which a swarm has progressed towards a stable state.
  
 The \textit{agent resultant magnitude} provides a view of the swarm's state through the balance between the repulsive and the cohesive vectors that are being applied to each agent. The variance component identifies the degree to which the swarm has stabilised. The ideal status for inter-agent interactions would be for the agents to have a resultant vector (\textit{agent resultant magnitude}) of zero or above. This would indicate that the agents are distributed such that they are at their distribution limit (outer most range of the cohesion field) or at a level that causes the agents to `pull' together. The ideal degree of deviation is zero as this indicates an even distribution of agents. Therefore for a fuller indication of a swarms \textit{state} both measurements need to be combined. The deviation from the mean clarifying the internal movement and the \textit{agent resultant magnitude} providing an indication of the `compression' that a swarm is logically experiencing (cohesiveness). These two aspects of a swarm's features are not considered by Gazi and Passino~\cite{GP:11} or Barnes et al~\cite{BFV:07} as a means of quantifying the structure of a swarm in terms of stability.
-
-\section{Distance based metric\label{section:DistanceDynamics}}
-The distance based metric considers the effect of the resultant vectors upon a swarm in terms of how the agents are physically distributed: i.e. only the inter-agent distances and the deviation from the mean of the agents (jitter) are considered. As with the \textit{agent resultant magnitude} metric the variations are important to determine the agent distribution. The standard deviation from the mean allows the internal `characteristic' of the measure to be realised. If the standard deviation is zero then all the agents are evenly spaced. The distance metric does not take into consideration the vector magnitudes between the agents as discussed above. The metric therefore is unable to identify the potential state of the swarm in terms of its cohesive or repulsive state.
-
-Navarro and Fernando describe a mean distance error metric that is based on the variations in distances between inter-agent spaces~\cite{NIM:09}. This is the same as the standard deviation of the distance based internal movement metric as described is here. 
 
 \section{Magnitude based internal movement model}\label{Section:StabilityModel}
 Using the formulae for the calculation of cohesion~(Equation \ref{eq:FlyToCentre1}, page \pageref{eq:FlyToCentre1}) and repulsion~(Equation \ref{eq:Repulsion1}, page \pageref{eq:Repulsion1}) for every agent and its neighbours it is possible to calculate an \textit{agent resultant magnitude} value (sum of agent resultant magnitudes). This value represents the overall potential of an agent. This magnitude when normalised produces a component of the \textit{movement-destination vector} for a swarm. If the agent resultant magnitude is zero (null vector) then the agent will not move. $P(b)$ is the \textit{inter-agent resultant magnitude vector} for agent $b$ defined by:
@@ -878,7 +873,13 @@ The metric for the internal movement is a set of numbers, the mean and standard 
 \caption{Baseline internal movement - magnitude\label{coord:BaselineMagnitude1}}
 \end{figure}
 
-\section{Distance metric}
+\section{Distance based metric\label{section:DistanceDynamics}}
+The distance based metric considers the effect of the resultant vectors upon a swarm in terms of how the agents are physically distributed: i.e. only the inter-agent distances and the deviation from the mean of the agents (jitter) are considered. As with the \textit{agent resultant magnitude} metric the variations are important to determine the agent distribution. The standard deviation from the mean allows the internal `characteristic' of the measure to be realised. If the standard deviation is zero then all the agents are evenly spaced. The distance metric does not take into consideration the vector magnitudes between the agents as discussed above. The metric therefore is unable to identify the potential state of the swarm in terms of its cohesive or repulsive state.
+
+Navarro and Fernando describe a mean distance error metric that is based on the variations in distances between inter-agent spaces~\cite{NIM:09}. This is the same as the standard deviation of the distance based internal movement metric as described is here. 
+
+
+\section{Distance metric internal movement}
 The distance based internal movement is measured by identifying the mean length of the vectors between an agent and its neighbours. As with the \textit{agent resultant magnitude} a coordination algorithm produces `jitter' which is the variations from the mean. In the case of the distance based metric the jitter is identified by the changes in the distances rather than the changes in vector magnitude (\textit{agent resultant magnitude}). The distance metric is the mean and the standard deviation `jitter' of the inter-agent distances.
 
 \section{Calculating distance based internal movement}
@@ -886,7 +887,7 @@ The relative position vector generated for an agent $b$ to its neighbour $b'$, $
 
 \begin{equation}
 \label{eq:SwarmStabilityDistance1}
-\mu_d(b) = \frac{\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}{\mathlarger{|nbr(b)|}}
+\mu_d(b) = \frac{1}{\mathlarger{|nbr(b)|}}\left({\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}\right)
 \end{equation}
 
 Equation~\ref{eq:SwarmStabilityDistance1} identifies the mean distance for an individual agent. The mean distance for a swarm is calculated by \ref{eq:SwarmStabilityDistance2}. All the inter-agent interactions must be included for the swarm ($S$). $\sum_{b \in S}|nbr(b)|$ calculates how many inter-agent relationships exist in the swarm and $\sum_{b' \in nbr(b)}|bb'|$ calculates the total distance between each agent and its neighbours. $\sum_{b \in S}$ iterates over all the agents in the swarm~($S$).
