@@ -22,6 +22,34 @@
        orient="auto"
        refY="0.0"
        refX="0.0"
+       id="marker4489"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4491"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4484"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4231"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
        id="marker5166"
        style="overflow:visible;"
        inkscape:isstock="true">
@@ -109,7 +137,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="4"
      inkscape:cx="375"
-     inkscape:cy="775.65099"
+     inkscape:cy="825.65099"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -195,9 +223,14 @@
        sodipodi:ry="90.25"
        d="m 405.5,266.61218 a 91.75,90.25 0 1 1 -183.5,0 91.75,90.25 0 1 1 183.5,0 z" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker5162);marker-end:url(#marker5166);stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 366.25,235.11218 13,-0.25"
-       id="path5160"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;marker-end:url(#marker4484);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 389.75,235.36218 47.25,-0.25"
+       id="path4222"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;marker-end:url(#marker4489)"
+       d="m 356.25,234.61218 -56.5,0.5"
+       id="path4487"
        inkscape:connector-curvature="0" />
   </g>
 </svg>
