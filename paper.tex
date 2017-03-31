@@ -730,7 +730,7 @@ Figure~\ref{methods:Stability3} shows two agents close together but with cohesio
 \begin{center}
 \includegraphics[width=6cm]{figures/Stability3}
 \end{center}
-\caption{Internal movement cohesion} \label{methods:Stability3}
+\caption{Internal movement cohesion and repulsion} \label{methods:Stability3}
 \end{figure}
 
 \begin{table}%[H]
@@ -782,7 +782,7 @@ If we consider the equilibrium state (Figure~\ref{methods:Stability4}) the resul
 \caption{Equilibrium with null vectors} \label{methods:StabilityNullVector}
 \end{figure}
 
-Due to the independent nature of the agents this situation is very rare. The residual motion that persists in a swarm is the background `noise' or `jitter' that an algorithm creates.
+Due to $v(b)$ the independent nature of the agents this situation is very rare. The residual motion that persists in a swarm is the background `noise' or `jitter' that an algorithm creates.
 
 If a swarm is goal-based the addition of a \textit{directional vector} will prevent all agents simultaneously producing null vectors~(Figure~\ref{concave:VoidPerimeter2}, Equation~\ref{eq:InterAgentMovementDirectional1}). Where $k_dv_{d}(b)$ is the calculated directional vector to be applied to an agent.
 
@@ -807,7 +807,60 @@ v(b) = k_cv_{c}(b) + k_rv_{r}(b) + k_dv_{d}(b)
 \end{figure}
 
 \section{Residual internal movement (Jitter)}\label{metric:Jitter}
-Due to the dynamic nature of a swarm, maintaining optimum internal movement as in~Figure \ref{methods:StabilityNullVector} is highly unlikely. The agent pairs will fluctuate between the 4 states~(Figures~\ref{methods:Stability1}, \ref{methods:Stability2}, \ref{methods:Stability3} and \ref{methods:Stability4}). This alternation between the states is \textit{jitter}. The degree to which this variation occurs can be measured using either the change in distance between the agent pairs, or the change in the resultant magnitude between the agent pairs. Jitter is motion that is produced to maintain the structure of a swarm. A coordination algorithm that produces minimal jitter is generally more desirable. Jitter (the fluctuation in and between the states) is an indication of the efficiency of an algorithm and an integral component of a swarms measurable behaviour.
+Due to the dynamic nature of a swarm, maintaining optimum internal movement as in~Figure \ref{methods:StabilityNullVector} is highly unlikely. The agent pairs may fluctuate between the 4 states~(Figures~\ref{methods:Stability1}, \ref{methods:Stability2}, \ref{methods:Stability3} and \ref{methods:Stability4}). This transitions are \textit{jitter}. The degree to which this variation occurs can be measured using either the change in distance between the agents, or the change in the magnitude $P(b)$ (Equation~\ref{eq:BotStabilityT}) between the agents. Jitter arises as motion to maintain the structure of a swarm. A swarm coordination algorithm that reduces jitter is generally desirable. 
+
+\section{Distance based metric\label{section:DistanceDynamics}}
+The distance-based metric considers a swarm in terms of how the agents are physically distributed: i.e. only the inter-agent distances and their standard deviation are considered. The standard deviation indicates the extent to which the swarm is out of balance and will move to re-balance itself. If the standard deviation is zero then all the agents are evenly spaced. 
+
+%The distance metric does not take into consideration the vector magnitudes between the agents as discussed above. The metric therefore is unable to identify the potential state of the swarm in terms of its cohesive or repulsive state.
+
+Navarro and Fernando describe a \textit{mean distance error} metric that is based on the variations in distances between inter-agent spaces~\cite{NIM:09}. This is the same as the standard deviation of the distance based internal movement metric. 
+
+
+%% \section{Distance metric internal movement}
+%% The distance based internal movement is measured by identifying the mean length of the vectors between an agent and its neighbours. As with the \textit{agent resultant magnitude} a coordination algorithm produces `jitter' which is the variations from the mean. In the case of the distance based metric the jitter is identified by the changes in the distances rather than the changes in vector magnitude (\textit{agent resultant magnitude}). The distance metric is the mean and the standard deviation `jitter' of the inter-agent distances.
+
+\section{Calculating distance based internal movement}
+Equation~\ref{eq:SwarmStabilityDistance1} computes the means distance of an agent to its neighbours $nbr(b)$. 
+%% The relative position vector generated for an agent $b$ to its neighbour $b'$, $bb'$, is shown in~(\ref{eq:FlyToCentre1}). The magnitude of that vector gives the distance between two agents. For an individual agent the average magnitude $\mu_d(b)$ is calculated as \ref{eq:SwarmStabilityDistance1} where $b$ is the agent and $|nbr(b)|$ is the number of neighbours.
+
+\begin{equation}
+\label{eq:SwarmStabilityDistance1}
+\mu_d(b) = \frac{1}{\mathlarger{|nbr(b)|}}\left({\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}\right)
+\end{equation}
+
+The mean distance for a swarm is calculated by Equation~\ref{eq:SwarmStabilityDistance2}. All the inter-agent distances are included for the swarm ($S$). 
+
+%% $\sum_{b \in S}|nbr(b)|$ calculates how many inter-agent relationships exist in the swarm and $\sum_{b' \in nbr(b)}|bb'|$ calculates the total distance between each agent and its neighbours. $\sum_{b \in S}$ iterates over all the agents in the swarm~($S$).
+
+\begin{equation}
+\label{eq:SwarmStabilityDistance2}
+\mu_d(S) = \frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}{\mathlarger{\sum_{b \in S}|nbr(b)|}}
+\end{equation}
+
+\section{Standard deviation in distance metric}\label{Section:VarianceInDistance}
+The mechanism above provides an overall indication of the distribution of the agents. The model for a swarm $S$ ($\mu_d(S)$) is not sufficient to give an indication of the internal distribution of the agents. The standard deviation clarifies the distribution within the swarm as shown in~Equation~\ref{eq:SwarmStabilityDistance3}. 
+
+%% $(|bb'| - \mu(S))^2$ is the square of the difference in a distance to the mean and $\sum_{b \in S}~\sum_{b' \in nbr(b)}$ calculates the number of inter-agent interactions.
+
+\begin{equation}
+\label{eq:SwarmStabilityDistance3}
+\sigma_d(S) = \sqrt{\frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}\Big(|bb'| - \mu_d(S)\Big)^2}{\mathlarger{\sum_{b \in S}|nbr(b)|}}}
+\end{equation}
+
+The distance metric for the internal distribution of the agents is the pair consisting of $\mu_d(S)$, $\sigma_d(S)$. This can be written informally as:
+
+\begin{equation}
+\label{eq:SwarmPotentialMagnitude}
+\psi_d(S) = \mu_d(S)\pm \sigma_d(S)
+\end{equation}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=9cm]{figures/BaselineDistance1}
+\end{center}
+\caption{Baseline internal movement - distance\label{coord:BaselineDistance1}}
+\end{figure}
 
 \section{Magnitude based metric\label{section:MagnitudeDynamics}}
 Magnitude based internal movement (\textit{agent resultant magnitude}) is measured by identifying the balance between the repulsion and cohesion between agents. `Jitter' in the case of the \textit{agent resultant magnitude} metric is measured as the variance of the magnitude lengths created by the agents. The identification of this variance produces the clarifying part of the \textit{agent resultant magnitude} metric.
@@ -873,51 +926,7 @@ The metric for the internal movement is a set of numbers, the mean and standard 
 \caption{Baseline internal movement - magnitude\label{coord:BaselineMagnitude1}}
 \end{figure}
 
-\section{Distance based metric\label{section:DistanceDynamics}}
-The distance based metric considers the effect of the resultant vectors upon a swarm in terms of how the agents are physically distributed: i.e. only the inter-agent distances and the deviation from the mean of the agents (jitter) are considered. As with the \textit{agent resultant magnitude} metric the variations are important to determine the agent distribution. The standard deviation from the mean allows the internal `characteristic' of the measure to be realised. If the standard deviation is zero then all the agents are evenly spaced. The distance metric does not take into consideration the vector magnitudes between the agents as discussed above. The metric therefore is unable to identify the potential state of the swarm in terms of its cohesive or repulsive state.
 
-Navarro and Fernando describe a mean distance error metric that is based on the variations in distances between inter-agent spaces~\cite{NIM:09}. This is the same as the standard deviation of the distance based internal movement metric as described is here. 
-
-
-\section{Distance metric internal movement}
-The distance based internal movement is measured by identifying the mean length of the vectors between an agent and its neighbours. As with the \textit{agent resultant magnitude} a coordination algorithm produces `jitter' which is the variations from the mean. In the case of the distance based metric the jitter is identified by the changes in the distances rather than the changes in vector magnitude (\textit{agent resultant magnitude}). The distance metric is the mean and the standard deviation `jitter' of the inter-agent distances.
-
-\section{Calculating distance based internal movement}
-The relative position vector generated for an agent $b$ to its neighbour $b'$, $bb'$, is shown in~(\ref{eq:FlyToCentre1}). The magnitude of that vector gives the distance between two agents. For an individual agent the average magnitude $\mu_d(b)$ is calculated as \ref{eq:SwarmStabilityDistance1} where $b$ is the agent and $|nbr(b)|$ is the number of neighbours.
-
-\begin{equation}
-\label{eq:SwarmStabilityDistance1}
-\mu_d(b) = \frac{1}{\mathlarger{|nbr(b)|}}\left({\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}\right)
-\end{equation}
-
-Equation~\ref{eq:SwarmStabilityDistance1} identifies the mean distance for an individual agent. The mean distance for a swarm is calculated by \ref{eq:SwarmStabilityDistance2}. All the inter-agent interactions must be included for the swarm ($S$). $\sum_{b \in S}|nbr(b)|$ calculates how many inter-agent relationships exist in the swarm and $\sum_{b' \in nbr(b)}|bb'|$ calculates the total distance between each agent and its neighbours. $\sum_{b \in S}$ iterates over all the agents in the swarm~($S$).
-
-\begin{equation}
-\label{eq:SwarmStabilityDistance2}
-\mu_d(S) = \frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}{\mathlarger{\sum_{b \in S}|nbr(b)|}}
-\end{equation}
-
-\section{Variance in distance metric}\label{Section:VarianceInDistance}
-The mechanism above provides an overall indication of the distribution of the agents. This model, as with the agent resultant magnitude model, is not sufficient to give an indication of the internal distribution of the agents. The addition of the standard deviation from the norm clarifies the distribution within the swarm as shown in~\ref{eq:SwarmStabilityDistance3}. $(|bb'| - \mu(S))^2$ is the square of the difference in a distance to the mean and $\sum_{b \in S}~\sum_{b' \in nbr(b)}$ calculates the number of inter-agent interactions.
-
-\begin{equation}
-\label{eq:SwarmStabilityDistance3}
-\sigma_d(S) = \sqrt{\frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}\Big(|bb'| - \mu_d(S)\Big)^2}{\mathlarger{\sum_{b \in S}|nbr(b)|}}}
-\end{equation}
-
-The distance metric for the internal distribution of the agents is the pair consisting of $\mu_d(S)$, $\sigma_d(S)$ the mean and the standard deviation of the swarms internal resultant distances from every agent in the swarm. This can be written informally as:
-
-\begin{equation}
-\label{eq:SwarmPotentialMagnitude}
-\psi_d = \mu_d(S)\pm \sigma_d(S)
-\end{equation}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=9cm]{figures/BaselineDistance1}
-\end{center}
-\caption{Baseline internal movement - distance\label{coord:BaselineDistance1}}
-\end{figure}
 
 \section{Conclusion - metric comparison\label{metric:MagnitudeDistanceComparison}}
 The two metrics appear to be similar in terms of the measurement of the structure of a swarm. The main difference is in how these two metrics can be used when examining the state of the swarm.

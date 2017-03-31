@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.4.12)  24 MAR 2017 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.4.12)  31 MAR 2017 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -396,30 +396,29 @@ File: figures/StabilityNullVector3.eps Graphic file (type eps)
 <figures/StabilityNullVector3.eps>
 File: figures/StabilityNullVector2.eps Graphic file (type eps)
  <figures/StabilityNullVector2.eps> [3]
+File: figures/BaselineDistance1.eps Graphic file (type eps)
+
+<figures/BaselineDistance1.eps>
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 860--861
+ [] 
+ []
+
 [4]
 File: figures/BaselineMagnitude1.eps Graphic file (type eps)
  <figures/BaselineMagnitude1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 871--872
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 924--925
  [] 
  []
 
 [5]
-File: figures/BaselineDistance1.eps Graphic file (type eps)
- <figures/BaselineDistance1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 917--918
- [] 
- []
-
 File: figures/FieldEffects2.eps Graphic file (type eps)
-<figures/FieldEffects2.eps> (./paper.bbl
+ <figures/FieldEffects2.eps> (./paper.bbl
 Underfull \hbox (badness 1783) in paragraph at lines 4--9
 []\OT1/ptm/m/n/8 Panayiotis An-dreou, Demetrios Zeinalipour-Yazti, Maria An-dre
 ou,
  []
 
-[6]) [7
-
-] (./paper.aux)
+) [6] (./paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -427,10 +426,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5664 strings out of 494954
  79291 string characters out of 6181003
- 152300 words of memory out of 5000000
+ 152299 words of memory out of 5000000
  8890 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  36i,11n,38p,1221b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (7 pages, 47088 bytes).
+Output written on paper.dvi (6 pages, 44040 bytes).
