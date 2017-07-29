@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.4.11)  29 JUL 2017 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.4.11)  29 JUL 2017 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,12 +259,20 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
 (fixltx2e)                See the latexrelease package for details.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count117
+\float@exts=\toks23
+\float@box=\box29
+\@float@everytoks=\toks24
+\@floatcapt=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./becs.sty
-\becstectlexists=\box29
-\becstempbox=\box30
+\becstectlexists=\box31
+\becstempbox=\box32
 LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -278,31 +286,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \rulelabellength=\skip57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count117
-\lst@gtempboxa=\box31
-\lst@token=\toks23
-\lst@length=\count118
+\lst@mode=\count118
+\lst@gtempboxa=\box33
+\lst@token=\toks25
+\lst@length=\count119
 \lst@currlwidth=\dimen138
-\lst@column=\count119
-\lst@pos=\count120
+\lst@column=\count120
+\lst@pos=\count121
 \lst@lostspace=\dimen139
 \lst@width=\dimen140
-\lst@newlines=\count121
-\lst@lineno=\count122
+\lst@newlines=\count122
+\lst@lineno=\count123
 \lst@maxwidth=\dimen141
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count123
-\lst@skipnumbers=\count124
-\lst@framebox=\box32
+\c@lstnumber=\count124
+\lst@skipnumbers=\count125
+\lst@framebox=\box34
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-\c@definition=\count125
-\c@exampleb=\count126
+\c@definition=\count126
+\c@exampleb=\count127
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
@@ -336,9 +344,12 @@ LaTeX Font Info:    ... okay on input line 450.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count127
+\c@lstlisting=\count128
 File: figures/FieldEffects.eps Graphic file (type eps)
  <figures/FieldEffects.eps>
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+
 Underfull \hbox (badness 4505) in paragraph at lines 604--605
 []\OT1/ptm/m/n/10 Figure 2[] shows the co-he-sion and re-pul-sion vec-tor
  []
@@ -358,13 +369,13 @@ Missing character: There is no Ž in font cmr10!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no Ž in font ptmr7t!
 [1
 
 
 ]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no Ž in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
@@ -378,27 +389,33 @@ File: figures/Stability1.eps Graphic file (type eps)
 <figures/Stability1.eps>
 File: figures/Stability2.eps Graphic file (type eps)
  <figures/Stability2.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
 File: figures/Stability3.eps Graphic file (type eps)
- <figures/Stability3.eps>
+
+<figures/Stability3.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 750--751
 []\OT1/ptm/m/n/10 Figure 6[] shows two agents close to-gether with
  []
 
 File: figures/Stability4.eps Graphic file (type eps)
-<figures/Stability4.eps> [2]
+<figures/Stability4.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: figures/StabilityNullVector.eps Graphic file (type eps)
- <figures/StabilityNullVector.eps>
+
+<figures/StabilityNullVector.eps> [3]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/StabilityNullVector3.eps Graphic file (type eps)
-
-<figures/StabilityNullVector3.eps>
+ <figures/StabilityNullVector3.eps>
 File: figures/StabilityNullVector2.eps Graphic file (type eps)
- <figures/StabilityNullVector2.eps> [3]
-File: figures/BaselineDistance1.eps Graphic file (type eps)
 
-<figures/BaselineDistance1.eps>
+<figures/StabilityNullVector2.eps>
+File: figures/BaselineDistance1.eps Graphic file (type eps)
+ <figures/BaselineDistance1.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 860--861
  [] 
  []
@@ -415,9 +432,17 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 924--925
  [] 
  []
 
-[5]
+
+Underfull \vbox (badness 1975) has occurred while \output is active []
+
+ [5]
 File: figures/FieldEffects2.eps Graphic file (type eps)
- <figures/FieldEffects2.eps> (./paper.bbl
+
+<figures/FieldEffects2.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./paper.bbl
 Underfull \hbox (badness 1783) in paragraph at lines 4--9
 []\OT1/ptm/m/n/8 Panayiotis An-dreou, Demetrios Zeinalipour-Yazti, Maria An-dre
 ou,
@@ -429,12 +454,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5664 strings out of 494954
- 79291 string characters out of 6181003
- 152299 words of memory out of 5000000
- 8890 multiletter control sequences out of 15000+600000
+ 5722 strings out of 494954
+ 80035 string characters out of 6181003
+ 147725 words of memory out of 5000000
+ 8944 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,11n,38p,1137b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,38p,1137b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (6 pages, 42816 bytes).
+Output written on paper.dvi (6 pages, 42780 bytes).
