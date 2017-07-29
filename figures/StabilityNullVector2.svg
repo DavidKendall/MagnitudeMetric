@@ -23,14 +23,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="227.30969"
+     inkscape:cx="122.65789"
      inkscape:cy="744.85281"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1887"
-     inkscape:window-height="1056"
-     inkscape:window-x="33"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="1920"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <defs
@@ -111,7 +111,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -190,7 +190,7 @@
          y="298.58636"
          x="347.18942"
          id="tspan9401"
-         sodipodi:role="line">bot movement</tspan></text>
+         sodipodi:role="line">agent movement</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path9403"
