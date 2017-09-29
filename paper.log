@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.4.11)  29 JUL 2017 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  29 SEP 2017 08:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -347,22 +347,19 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count128
 File: figures/FieldEffects.eps Graphic file (type eps)
  <figures/FieldEffects.eps>
-Underfull \vbox (badness 2698) has occurred while \output is active []
-
-
-Underfull \hbox (badness 4505) in paragraph at lines 604--605
+Underfull \hbox (badness 4505) in paragraph at lines 610--611
 []\OT1/ptm/m/n/10 Figure 2[] shows the co-he-sion and re-pul-sion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--605
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
 
  []
 
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 625.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 631.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no Ž in font cmr10!
@@ -381,7 +378,7 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/Stability5.eps Graphic file (type eps)
  <figures/Stability5.eps>
-Underfull \hbox (badness 1902) in paragraph at lines 671--671
+Underfull \hbox (badness 1902) in paragraph at lines 677--677
 \OT1/ptm/m/n/8 tional bias 0 for static
  []
 
@@ -395,7 +392,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: figures/Stability3.eps Graphic file (type eps)
 
 <figures/Stability3.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 750--751
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
 []\OT1/ptm/m/n/10 Figure 6[] shows two agents close to-gether with
  []
 
@@ -416,19 +413,19 @@ File: figures/StabilityNullVector2.eps Graphic file (type eps)
 <figures/StabilityNullVector2.eps>
 File: figures/BaselineDistance1.eps Graphic file (type eps)
  <figures/BaselineDistance1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 860--861
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 866--867
  [] 
  []
 
 [4]
-Underfull \hbox (badness 2119) in paragraph at lines 898--899
+Underfull \hbox (badness 2119) in paragraph at lines 904--905
 []\OT1/ptm/m/n/10 To iden-tify the swarm based \OT1/ptm/m/it/10 agent re-sul-ta
 nt mag-ni-
  []
 
 File: figures/BaselineMagnitude1.eps Graphic file (type eps)
 <figures/BaselineMagnitude1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 924--925
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 930--931
  [] 
  []
 
@@ -462,4 +459,4 @@ Here is how much of TeX's memory you used:
  17 hyphenation exceptions out of 8191
  36i,11n,38p,1137b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (6 pages, 42780 bytes).
+Output written on paper.dvi (6 pages, 43164 bytes).
