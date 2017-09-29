@@ -538,9 +538,15 @@ M.~Brockway are from Northumbria University, UK}
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
 %\boldmath
-This paper examines the distance metric as a mechanism to measure the internal movement of agents and introduces a new \textit{magnitude based metric}. Both metrics are based upon the resultant internal movement of a swarm identified by analysing the changes in the inter-agent interactions. The two metrics differ in their approach to identifying the changes. The distance metric uses variations in the inter-agent spaces and the new metric uses the resultant magnitudes from an agent's \textit{inter-agent vector magnitudes} that are calculated from an agent's fields. 
+An important criteria in the application of swarm coordination algorithms is the extent to which they cause unnecessary movement. i.e. movement which occurs as a side affect of the algorithm rather than the the intended function. This paper examines the widely used distance metric as a mechanism to measure the internal movement of agents and introduces a new \textit{magnitude based metric}. 
 
-Both metrics allow a comparison of the effects of different swarming algorithms on a swarm's structure to idenfify the `level' of change in a swarms internal structure which is an indication of the amount of unnecessary movement an algorithm creates. The magnitude based metric also provides additional information by allowing the current `state' of a swarm to be identified i.e if it is expanding or cohesive.
+Both metrics are based upon the resultant internal movement of a swarm identified by analysing the changes in the inter-agent interactions. The two metrics differ in their approach to identifying the changes. The distance metric uses variations in the inter-agent distances and the new metric uses the resultant magnitudes from \textit{inter-agent vector magnitudes} which we claim offers a number of advantages over the distance metric. 
+
+Both metrics allow a comparison of the effects of different swarming algorithms on a swarm's structure to identify the `level' of change in a swarm's internal structure which is an indication of the amount of unnecessary movement an algorithm creates. 
+
+The magnitude based metric also identifies a swarm as expanding or cohesive.
+This additional information has practical benefits for the implementation of algorithms for hetrogenious swarms.
+
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
