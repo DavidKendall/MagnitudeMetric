@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  29 SEP 2017 08:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.20)  12 OCT 2017 08:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper
 (./paper.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./IEEEtran.cls
 Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -345,31 +345,37 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count128
+
+Underfull \hbox (badness 1406) in paragraph at lines 595--596
+[]\OT1/ptm/m/it/10 Swarming \OT1/ptm/m/n/10 in the an-i-mal king-dom of ants, b
+ees, fish
+ []
+
 File: figures/FieldEffects.eps Graphic file (type eps)
- <figures/FieldEffects.eps>
-Underfull \hbox (badness 4505) in paragraph at lines 610--611
+<figures/FieldEffects.eps>
+Underfull \hbox (badness 4505) in paragraph at lines 613--614
 []\OT1/ptm/m/n/10 Figure 2[] shows the co-he-sion and re-pul-sion vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
  []
 
+[1
+
+
+]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 631.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 634.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no Ž in font cmr10!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
-[1
-
-
-]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
@@ -378,85 +384,79 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/Stability5.eps Graphic file (type eps)
  <figures/Stability5.eps>
-Underfull \hbox (badness 1902) in paragraph at lines 677--677
+Underfull \hbox (badness 1902) in paragraph at lines 680--680
 \OT1/ptm/m/n/8 tional bias 0 for static
  []
 
 File: figures/Stability1.eps Graphic file (type eps)
 <figures/Stability1.eps>
 File: figures/Stability2.eps Graphic file (type eps)
- <figures/Stability2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
+ <figures/Stability2.eps> [2]
 File: figures/Stability3.eps Graphic file (type eps)
-
-<figures/Stability3.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 756--757
+ <figures/Stability3.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 []\OT1/ptm/m/n/10 Figure 6[] shows two agents close to-gether with
  []
 
 File: figures/Stability4.eps Graphic file (type eps)
 <figures/Stability4.eps>
+File: figures/StabilityNullVector.eps Graphic file (type eps)
+ <figures/StabilityNullVector.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-File: figures/StabilityNullVector.eps Graphic file (type eps)
-
-<figures/StabilityNullVector.eps> [3]
+ [3]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/StabilityNullVector3.eps Graphic file (type eps)
- <figures/StabilityNullVector3.eps>
-File: figures/StabilityNullVector2.eps Graphic file (type eps)
 
-<figures/StabilityNullVector2.eps>
+<figures/StabilityNullVector3.eps>
+File: figures/StabilityNullVector2.eps Graphic file (type eps)
+ <figures/StabilityNullVector2.eps>
 File: figures/BaselineDistance1.eps Graphic file (type eps)
- <figures/BaselineDistance1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 866--867
+
+<figures/BaselineDistance1.eps>
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 869--870
  [] 
  []
 
-[4]
-Underfull \hbox (badness 2119) in paragraph at lines 904--905
+
+Underfull \vbox (badness 1033) has occurred while \output is active []
+
+ [4]
+Underfull \hbox (badness 2119) in paragraph at lines 907--908
 []\OT1/ptm/m/n/10 To iden-tify the swarm based \OT1/ptm/m/it/10 agent re-sul-ta
 nt mag-ni-
  []
 
+[5]
 File: figures/BaselineMagnitude1.eps Graphic file (type eps)
-<figures/BaselineMagnitude1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 930--931
+ <figures/BaselineMagnitude1.eps>
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 933--934
  [] 
  []
 
-
-Underfull \vbox (badness 1975) has occurred while \output is active []
-
- [5]
 File: figures/FieldEffects2.eps Graphic file (type eps)
-
-<figures/FieldEffects2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./paper.bbl
+<figures/FieldEffects2.eps> (./paper.bbl
 Underfull \hbox (badness 1783) in paragraph at lines 4--9
 []\OT1/ptm/m/n/8 Panayiotis An-dreou, Demetrios Zeinalipour-Yazti, Maria An-dre
 ou,
  []
 
-) [6] (./paper.aux)
+[6]) [7
+
+] (./paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5722 strings out of 494954
- 80035 string characters out of 6181003
- 147725 words of memory out of 5000000
- 8944 multiletter control sequences out of 15000+600000
+ 5727 strings out of 493030
+ 80081 string characters out of 6136260
+ 151586 words of memory out of 5000000
+ 9200 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
- 17 hyphenation exceptions out of 8191
- 36i,11n,38p,1137b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1144 hyphenation exceptions out of 8191
+ 36i,11n,38p,1453b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (6 pages, 43164 bytes).
+Output written on paper.dvi (7 pages, 46548 bytes).

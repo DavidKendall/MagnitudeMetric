@@ -36,6 +36,12 @@ Laura Barnes, MaryAnne Fields, and Kimon Valavanis.
 \newblock Verifiable control of a swarm of unmanned aerial vehicles.
 \newblock {\em Journal of Aerospace Engineering}, 223(7):939--953, 2009.
 
+\bibitem{EP:10}
+Samitha~W Ekanayake and Pubudu~N Pathirana.
+\newblock Formations of robotic swarm: an artificial force based approach.
+\newblock {\em International Journal of Advanced Robotic Systems},
+  7(3):173--190, 2010.
+
 \bibitem{GP:04a}
 V.~Gazi and K.~M. Passino.
 \newblock Stability analysis of social foraging swarms.
@@ -65,6 +71,25 @@ Veysel Gazi and Kevin~M Passino.
 Veysel Gazi and Kevin~M Passino.
 \newblock {\em Swarm stability and optimization}.
 \newblock Springer Science \& Business Media, 2011.
+
+\bibitem{GK:07}
+Pini Gurfil and Elad Kivelevitch.
+\newblock Flock properties effect on task assignment and formation flying of
+  cooperating unmanned aerial vehicles.
+\newblock {\em Proceedings of the Institution of Mechanical Engineers, Part G:
+  Journal of Aerospace Engineering}, 221(3):401--416, 2007.
+
+\bibitem{HER:11}
+J.~Hereford.
+\newblock Analysis of beeclust swarm algorithm.
+\newblock In {\em Swarm Intelligence (SIS), 2011 IEEE Symposium on}, pages
+  1--7, April 2011.
+
+\bibitem{HCS:09}
+S.~P. Hou, C.~C. Cheah, and J.~J.~E. Slotine.
+\newblock Dynamic region following formation control for a swarm of robots.
+\newblock In {\em Robotics and Automation, 2009. ICRA '09. IEEE International
+  Conference on}, pages 1929--1934, May 2009.
 
 \bibitem{MYP:09}
 Yogeswaran Mohan and SG~Ponnambalam.
