@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  20 OCT 2017 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.1)  6 NOV 2017 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,7 +384,7 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/Stability5.eps Graphic file (type eps)
  <figures/Stability5.eps>
-Underfull \vbox (badness 2573) has occurred while \output is active []
+Underfull \vbox (badness 2970) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1902) in paragraph at lines 679--679
@@ -430,14 +430,14 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 868--869
  []
 
 [5]
-Underfull \hbox (badness 2119) in paragraph at lines 906--907
+Underfull \hbox (badness 2119) in paragraph at lines 910--911
 []\OT1/ptm/m/n/10 To iden-tify the swarm based \OT1/ptm/m/it/10 agent re-sul-ta
 nt mag-ni-
  []
 
 File: figures/BaselineMagnitude1.eps Graphic file (type eps)
 <figures/BaselineMagnitude1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 932--933
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 936--937
  [] 
  []
 
@@ -457,11 +457,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  5727 strings out of 494954
- 80081 string characters out of 6181003
+ 80081 string characters out of 6181004
  147750 words of memory out of 5000000
  8949 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,11n,38p,2358b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,38p,2378b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (7 pages, 48156 bytes).
+Output written on paper.dvi (7 pages, 48012 bytes).
