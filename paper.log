@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  1 DEC 2017 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.20)  6 DEC 2017 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper
 (./paper.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./IEEEtran.cls
 Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -417,26 +417,39 @@ Underfull \vbox (badness 3503) has occurred while \output is active []
 
 File: figures/StabilityNullVector2.eps Graphic file (type eps)
 
-<figures/StabilityNullVector2.eps> [4]
+<figures/StabilityNullVector2.eps>
+
+LaTeX Warning: Reference `eq:BotStabilityT' on page 4 undefined on input line 8
+18.
+
+[4]
 File: figures/BaselineDistance1.eps Graphic file (type eps)
  <figures/BaselineDistance1.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 868--869
  [] 
  []
 
+
+LaTeX Warning: Reference `eq:BotStabilityT' on page 5 undefined on input line 8
+76.
+
 [5]
-Underfull \hbox (badness 2119) in paragraph at lines 922--923
+Underfull \hbox (badness 2119) in paragraph at lines 926--927
 []\OT1/ptm/m/n/10 To iden-tify the swarm based \OT1/ptm/m/it/10 agent re-sul-ta
 nt mag-ni-
  []
 
 File: figures/BaselineMagnitude1.eps Graphic file (type eps)
 <figures/BaselineMagnitude1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 948--949
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 952--953
  [] 
  []
 
+
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
 File: figures/FieldEffects2.eps Graphic file (type eps)
+
 <figures/FieldEffects2.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -449,16 +462,19 @@ ou,
 
 ) [7] (./paper.aux)
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5728 strings out of 494954
- 80103 string characters out of 6181003
- 147759 words of memory out of 5000000
- 8950 multiletter control sequences out of 15000+600000
+ 5728 strings out of 493030
+ 80103 string characters out of 6136260
+ 152586 words of memory out of 5000000
+ 9201 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
- 17 hyphenation exceptions out of 8191
+ 1144 hyphenation exceptions out of 8191
  36i,11n,38p,2376b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (7 pages, 49244 bytes).
+Output written on paper.dvi (7 pages, 48960 bytes).
