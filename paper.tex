@@ -663,6 +663,20 @@ where $k_c$ and $k_r$ are weightings to change the effect of each vector as show
 \caption{Vectors on line of separation} \label{methods:Stability5}
 \end{figure}
 
+\section{Modelling movement}\label{sec:Movement1}
+Each agent within a swarm calculates its \textit{movement-direction vector} based on its \textit{interaction} and \textit{destination} vectors. The \textit{movement vector}~($b_{pos}$) is calculated using the unit \textit{movement-direction vector} of Equation~\ref{eq:InterAgentMovement2} multiplied by the time elapsed~($t$) in the system and the speed characteristic of the agent~($s_b$).
+
+This process is carried out for every agent in the swarm to genrate the swarm's next position.
+
+\begin{center}
+\begin{equation}
+\label{eq:AgentMovement}
+b_{pos}=s_{b}t\big(v(b)\big)\string^ 
+\end{equation}‎
+\end{center}
+
+The increment in the location of agent $b$ over time interval $t$ is shown in Equation~\ref{eq:AgentMovement} where $s_b$ is the speed of agent~$b$.
+
 \section{Swarm movement analysis\label{metric:MagnitudeDynamics2}}
 The repulsion and cohesion vectors are generated for an agent through the interaction of their field effects~(Figure~\ref{methods:FieldEffects}). There are a limited number of interactions that can occur; These are illustrated in Figures \ref{methods:Stability1}, \ref{methods:Stability2}, \ref{methods:Stability3} and \ref{methods:Stability4}.
 
@@ -771,8 +785,8 @@ Figure~\ref{methods:Stability4} shows two agents close together with $|k_cv_c|~=
 Log &	Id &	N.Id &	Distance &	{\color{green}Cohesion} &	{\color{red}Repulsion} 	\\ \hline
 7 & 76 &	91 & 55.39031 & {\color{green}276.95156} & {\color{red}276.94684} \\ \hline
 24 & 75 & 6 & 55.39032 & {\color{green}276.95160} & {\color{red}276.94661} \\ \hline
-32 & 72 & 38 &	55.39002603773678 & {\color{green}276.95013} & {\color{red}276.95370} \\ \hline
-35 &	63 & 64 & 55.39022 &	{\color{green}276.95113} &	{\color{red}276.94887} \\
+32 & 72 & 38 &	55.39002 & {\color{green}276.95013} & {\color{red}276.95370} \\ \hline
+35 & 63 & 64 & 55.39022 &	{\color{green}276.95113} &	{\color{red}276.94887} \\
 \hline
 \end{tabular}\caption{Data extract ($|k_cv_c| \approx |k_rv_r|$)} \label{tab:SampleEquilibrium}
 \end{center}
@@ -817,8 +831,8 @@ v(b) = k_cv_{c}(b) + k_rv_{r}(b) + k_dv_{d}(b)
 \section{Residual internal movement (Jitter)}\label{metric:Jitter}
 Due to the dynamic nature of a swarm, maintaining optimum internal movement as in~Figure \ref{methods:StabilityNullVector} is highly unlikely. The agent pairs may fluctuate between the 4 states~(Figures~\ref{methods:Stability1}, \ref{methods:Stability2}, \ref{methods:Stability3} and \ref{methods:Stability4}); These transitions are \emph{jitter}. The degree to which this variation occurs can be measured using either the change in distance between the agents, or the change in the magnitude $P(b)$ (Equation~\ref{eq:BotStabilityT}) between the agents. Jitter arises as motion to maintain the structure of a swarm. A swarm coordination algorithm that reduces jitter is generally desirable. 
 
-\section{Distance based metric\label{section:DistanceDynamics}}
-The distance-based metric considers a swarm in terms of how the agents are physically distributed: i.e. only the inter-agent distances and their standard deviation are considered. The standard deviation indicates the extent to which the swarm is out of balance and will move to re-balance itself. If the standard deviation is zero then all the agents are evenly spaced. 
+\section{Distance metric\label{section:DistanceDynamics}}
+The distance metric considers a swarm in terms of how the agents are physically distributed: i.e. only the inter-agent distances and their standard deviation are considered. The standard deviation indicates the extent to which the swarm is out of balance and will move to re-balance itself. If the standard deviation is zero then all the agents are evenly spaced. 
 
 %The distance metric does not take into consideration the vector magnitudes between the agents as discussed above. The metric therefore is unable to identify the potential state of the swarm in terms of its cohesive or repulsive state.
 
@@ -828,7 +842,7 @@ Navarro and Fernando describe a \emph{mean distance error} metric that is based 
 %% \section{Distance metric internal movement}
 %% The distance based internal movement is measured by identifying the mean length of the vectors between an agent and its neighbours. As with the \emph{agent resultant magnitude} a coordination algorithm produces `jitter' which is the variations from the mean. In the case of the distance based metric the jitter is identified by the changes in the distances rather than the changes in vector magnitude (\emph{agent resultant magnitude}). The distance metric is the mean and the standard deviation `jitter' of the inter-agent distances.
 
-\section{Calculating distance based internal movement}
+\section{Calculating distance internal movement}
 Equation~\ref{eq:SwarmStabilityDistance1} computes the means distance of an agent to its neighbours $nbr(b)$. 
 %% The relative position vector generated for an agent $b$ to its neighbour $b'$, $bb'$, is shown in~(\ref{eq:FlyToCentre1}). The magnitude of that vector gives the distance between two agents. For an individual agent the average magnitude $\mu_d(b)$ is calculated as \ref{eq:SwarmStabilityDistance1} where $b$ is the agent and $|nbr(b)|$ is the number of neighbours.
 
@@ -890,7 +904,7 @@ The \emph{cohesion/repulsion metric} on its own does not give a complete measure
 The \emph{agent resultant magnitude} provides a view of the swarm's state through the balance between the repulsive and the cohesive vectors that are being applied to each agent. The deviation component identifies the degree to which the swarm has stabilised. The ideal status for inter-agent interactions would be for the agents to have a resultant vector (\emph{agent resultant magnitude}) of zero or above. This would indicate that the agents are distributed such that they are at their distribution limit (outer most range of the cohesion field) or at a level that causes the agents to `pull' together. The ideal degree of deviation is zero as this indicates an even distribution of agents. These two aspects of a swarm's features are not considered by Gazi and Passino~\cite{GP:11} or Barnes et al~\cite{BFV:07} as a means of quantifying the structure of a swarm in terms of stability.
 
 \section{Cohesion/repulsion internal movement model}\label{Section:StabilityModel}
-Section~ref{Section:StabilityMagnitude}~discussed calculation of resultant cohesion~(Equation \ref{eq:FlyToCentre1}) and resultant repulsion~(Equation \ref{eq:Repulsion1}) vectors for each agent deriving a combined \emph{cohesion/repulsion vector} via equation~\ref{eq:InterAgentMovement2}. 
+Section~\ref{Section:StabilityMagnitude}~discussed calculation of resultant cohesion~(Equation \ref{eq:FlyToCentre1}) and resultant repulsion~(Equation \ref{eq:Repulsion1}) vectors for each agent deriving a combined \emph{cohesion/repulsion vector} via equation~\ref{eq:InterAgentMovement2}. 
 
 %% This value represents the overall `potential' of an agent. This vector when normalised produces a component of the \emph{movement-destination vector} for a swarm. If the total cohesion/repulsion vector is zero (null vector) then the agent will not move. $M(b)$ is the total \emph{cohesion/repulsion vector} for agent $b$ defined by:
 %% 
@@ -899,22 +913,24 @@ Section~ref{Section:StabilityMagnitude}~discussed calculation of resultant cohes
 %% M(b) = k_cv_c(b) + k_rv_r(b)
 %% \end{equation}
 
-Now, we define for each agent $b$ a scalar, $P(b)$, a measure of the extent to which the neighbours of $b$ are cohering inwards or repelling outwards this is Equation~\ref{eq:CohesionRepulsion}.
+Now, we define for each agent $b$ a \emph{cohesion/repulsion scalar}, $P(b)$, to measure the influence of the neighbours of $b$ on $b$ as cohesive (positive) or repulsive (negative); this is Equation~\ref{eq:CohesionRepulsion}.
 
 \begin{equation}
 \label{eq:CohesionRepulsion}
 P(b) = \left\{\begin{array}{lll}
-               |M(b)|& if & |k_cv_c(b)| > |k_r v_r(b)|\\
-              -|M(b)|& otherwise
+               |v(b)|& if & |k_cv_c(b)| > |k_r v_r(b)|\\
+              -|v(b)|& otherwise
               \end{array}\right.
 \end{equation}
 
-Although it is possible for agent $b$ to have a resultant vector of null there could still be a variation in the constituent components. The variation calculation (standard deviation) is shown in~\ref{Section:VarianceInPotential}. \ref{eq:SwarmStabilityMetricT} is the mean of the \emph{agent resultant magnitudes} for an agent and its neighbours where $|nbr(b)|$ is the number of neighbours.
+Although it is possible for $v(b)$ to be null there could still be variation in the constituent components. The variation calculation (standard deviation) is shown below. 
 
-\begin{equation}
-\label{eq:SwarmStabilityMetricT}
-\mu_p(b) = \frac{P(b)}{|nbr(b)|}
-\end{equation}
+%% Equation~\ref{eq:SwarmStabilityMetricT} is the mean of the cohesion/repulsion scalar for an agent.
+%% 
+%% \begin{equation}
+%% \label{eq:SwarmStabilityMetricT}
+%% \mu_p(b) = \frac{P(b)}{|nbr(b)|}
+%% \end{equation}
 
 %% \ref{eq:SwarmStabilityMetricT} should be considered as being applied at discrete points in time within a simulation. The formulae could also be shown based on time $t$ (\ref{eq:SwarmStabilityMetricT2}) where $b_t$ is an agent at a specific time interval. All formulae for agent resultant magnitude in this thesis will be considered as being applied at a point in time and will therefore be shown without a $t$ subscript.
 %% 
@@ -923,29 +939,32 @@ Although it is possible for agent $b$ to have a resultant vector of null there c
 %% \mu_p(b_{t}) = \frac{P(b_{t})}{|nbr(b_{t})|}
 %% \end{equation}
 
-To identify the swarm based \emph{agent resultant magnitude}~Equation~\ref{eq:SwarmStabilityMetricT} must be extended to iterate over all the agents in the swarm. \ref{eq:SwarmStabilityMetricT3} shows $\mu_p(S)$~as the swarm based magnitude.
+The mean cohesion/repulsion scalar for the swarm is now given by~Equation~\ref{eq:SwarmStabilityMetricT3}.  
 
 \begin{equation}
 \label{eq:SwarmStabilityMetricT3}
 \mu_p(S) = \frac{\mathlarger{\sum_{b \in S} P(b)}}{\mathlarger{\sum_{b \in S}}|nbr(b)|}
 \end{equation}
 
-\section{Standard deviation in agent cohesion/repulsion metric}\label{Section:VarianceInPotential}
-To improve the metric clarification in terms of the deviation from the \emph{cohesion/repulsion metric} norm is calculated. The standard deviation of the entire swarm  is shown in Equation \ref{eq:SwarmStabilityMetricT}.
+%% \section{Standard deviation in agent cohesion/repulsion metric}\label{Section:VarianceInPotential}
+%% To improve the metric clarification in terms of the deviation from the \emph{cohesion/repulsion metric} norm is calculated. The standard deviation of the entire swarm  is shown in Equation \ref{eq:SwarmStabilityMetricT}.
 
-The standard deviation is calculated as Equation~\ref{eq:SwarmStabilityQuotientT} where $\sigma_p(S)$ is the standard deviation at a time $t$ and $\mu_p(S)$ is the mean at the same point in time. 
+The standard deviation associated with this mean is calculated as Equation~\ref{eq:SwarmStabilityQuotientT}.
+%%  where $\sigma_p(S)$ is the standard deviation and $\mu_p(S)$ is the mean at the same point in time. 
 
 \begin{equation}
 \label{eq:SwarmStabilityQuotientT}
 \sigma_p(S) = \sqrt{\frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}\Big(P(b')-\mu_p(S)\Big)^2}{\mathlarger{\sum_{b \in S}}|nbr(b))|}}
 \end{equation}
 
-The metric for the internal movement is a set of numbers, the mean and standard deviation of the swarm's internal \emph{agent resultant magnitude} derived from each agent and its neighbour interactions~(Equation~\ref{eq:SwarmPotentialMagnitude}). The pair $\mu_p(S)$, $\sigma_p(S)$ may be written informally as: 
+The metric for the internal movement is this pair of numbers, the mean and standard deviation of the swarm's internal \emph{cohesion/repulsion}. The pair $\mu_p(S)$, $\sigma_p(S)$ may be written informally as: 
 
 \begin{equation}
 \label{eq:SwarmPotentialMagnitude}
-\psi_p = \mu_p(S)\pm \sigma_p(S)
+\psi_p(S) = \mu_p(S)\pm \sigma_p(S)
 \end{equation}
+
+Figure~\ref{coord:BaselineMagnitude1} shows the evolution of the metric in time.
 
 \begin{figure}[H]
 \begin{center}

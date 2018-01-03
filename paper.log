@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.20)  6 DEC 2017 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  3 JAN 2018 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper
 (./paper.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
 (./IEEEtran.cls
 Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -386,75 +386,85 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/Stability5.eps Graphic file (type eps)
 <figures/Stability5.eps>
-Underfull \hbox (badness 1902) in paragraph at lines 679--679
+Underfull \hbox (badness 1629) in paragraph at lines 667--668
+[]\OT1/ptm/m/n/10 Each agent within a swarm cal-cu-lates its \OT1/ptm/m/it/10 m
+ovement-
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no Ž in font ptmr7t!
+
+Underfull \hbox (badness 1902) in paragraph at lines 693--693
 \OT1/ptm/m/n/8 tional bias 0 for static
  []
 
+
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+ [2]
 File: figures/Stability1.eps Graphic file (type eps)
-<figures/Stability1.eps> [2]
+
+<figures/Stability1.eps>
 File: figures/Stability2.eps Graphic file (type eps)
  <figures/Stability2.eps>
+Underfull \vbox (badness 1931) has occurred while \output is active []
+
 File: figures/Stability3.eps Graphic file (type eps)
- <figures/Stability3.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+
+<figures/Stability3.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
 []\OT1/ptm/m/n/10 Figure 6[] shows two agents close to-gether with
  []
 
+[3]
 File: figures/Stability4.eps Graphic file (type eps)
-<figures/Stability4.eps>
+ <figures/Stability4.eps>
+File: figures/StabilityNullVector.eps Graphic file (type eps)
+ <figures/StabilityNullVector.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
-File: figures/StabilityNullVector.eps Graphic file (type eps)
-
-<figures/StabilityNullVector.eps>
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/StabilityNullVector3.eps Graphic file (type eps)
- <figures/StabilityNullVector3.eps>
-Underfull \vbox (badness 3503) has occurred while \output is active []
 
+<figures/StabilityNullVector3.eps>
 File: figures/StabilityNullVector2.eps Graphic file (type eps)
-
-<figures/StabilityNullVector2.eps>
+ <figures/StabilityNullVector2.eps>
 
 LaTeX Warning: Reference `eq:BotStabilityT' on page 4 undefined on input line 8
-18.
+32.
 
 [4]
 File: figures/BaselineDistance1.eps Graphic file (type eps)
  <figures/BaselineDistance1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 868--869
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 882--883
  [] 
  []
 
 
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+
+
 LaTeX Warning: Reference `eq:BotStabilityT' on page 5 undefined on input line 8
-76.
+90.
 
 [5]
-Underfull \hbox (badness 2119) in paragraph at lines 926--927
-[]\OT1/ptm/m/n/10 To iden-tify the swarm based \OT1/ptm/m/it/10 agent re-sul-ta
-nt mag-ni-
+Underfull \hbox (badness 5302) in paragraph at lines 907--908
+[]\OT1/ptm/m/n/10 Section III[] dis-cussed cal-cu-la-tion of re-sul-tant co-he-
+
  []
 
 File: figures/BaselineMagnitude1.eps Graphic file (type eps)
 <figures/BaselineMagnitude1.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 952--953
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 971--972
  [] 
  []
 
-
-Underfull \vbox (badness 1635) has occurred while \output is active []
-
 File: figures/FieldEffects2.eps Graphic file (type eps)
-
-<figures/FieldEffects2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-(./paper.bbl
+<figures/FieldEffects2.eps> [6] (./paper.bbl
 Underfull \hbox (badness 1783) in paragraph at lines 4--9
 []\OT1/ptm/m/n/8 Panayiotis An-dreou, Demetrios Zeinalipour-Yazti, Maria An-dre
 ou,
@@ -469,12 +479,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5728 strings out of 493030
- 80103 string characters out of 6136260
- 152586 words of memory out of 5000000
- 9201 multiletter control sequences out of 15000+600000
+ 5728 strings out of 494954
+ 80081 string characters out of 6181003
+ 149752 words of memory out of 5000000
+ 8950 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
+ 17 hyphenation exceptions out of 8191
  36i,11n,38p,2376b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (7 pages, 48960 bytes).
+Output written on paper.dvi (7 pages, 48900 bytes).
