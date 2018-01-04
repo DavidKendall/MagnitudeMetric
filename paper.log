@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  4 JAN 2018 08:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  4 JAN 2018 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,12 +446,7 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 882--883
 
 Underfull \vbox (badness 1337) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `eq:BotStabilityT' on page 5 undefined on input line 8
-90.
-
-[5]
+ [5]
 Underfull \hbox (badness 5302) in paragraph at lines 907--908
 []\OT1/ptm/m/n/10 Section III[] dis-cussed cal-cu-la-tion of re-sul-tant co-he-
 
@@ -469,7 +464,7 @@ Underfull \vbox (badness 1424) has occurred while \output is active []
 
  [6]
 (./paper.bbl
-Underfull \hbox (badness 1783) in paragraph at lines 4--9
+Underfull \hbox (badness 1783) in paragraph at lines 10--15
 []\OT1/ptm/m/n/8 Panayiotis An-dreou, Demetrios Zeinalipour-Yazti, Maria An-dre
 ou,
  []
@@ -483,12 +478,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5729 strings out of 494954
- 80096 string characters out of 6181003
- 148762 words of memory out of 5000000
- 8951 multiletter control sequences out of 15000+600000
+ 5736 strings out of 494954
+ 80152 string characters out of 6181003
+ 149790 words of memory out of 5000000
+ 8958 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,11n,38p,2376b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,38p,2380b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (7 pages, 49168 bytes).
+Output written on paper.dvi (7 pages, 52500 bytes).
