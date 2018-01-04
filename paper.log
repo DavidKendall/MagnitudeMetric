@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  3 JAN 2018 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.23)  4 JAN 2018 08:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -464,7 +464,11 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 971--972
  []
 
 File: figures/FieldEffects2.eps Graphic file (type eps)
-<figures/FieldEffects2.eps> [6] (./paper.bbl
+<figures/FieldEffects2.eps>
+Underfull \vbox (badness 1424) has occurred while \output is active []
+
+ [6]
+(./paper.bbl
 Underfull \hbox (badness 1783) in paragraph at lines 4--9
 []\OT1/ptm/m/n/8 Panayiotis An-dreou, Demetrios Zeinalipour-Yazti, Maria An-dre
 ou,
@@ -479,12 +483,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5728 strings out of 494954
- 80081 string characters out of 6181003
- 149752 words of memory out of 5000000
- 8950 multiletter control sequences out of 15000+600000
+ 5729 strings out of 494954
+ 80096 string characters out of 6181003
+ 148762 words of memory out of 5000000
+ 8951 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  36i,11n,38p,2376b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (7 pages, 48900 bytes).
+Output written on paper.dvi (7 pages, 49168 bytes).
