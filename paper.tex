@@ -603,7 +603,7 @@ Currently, much swarm research uses field effects as the method of modelling int
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=6cm]{figures/FieldEffects}
+\includegraphics[width=5cm]{figures/FieldEffects}
 \end{center}
 \caption{Agent field effects\label{methods:FieldEffects}}
 \end{figure}
@@ -702,7 +702,7 @@ Figure~\ref{methods:Stability1} shows two agents within each other's cohesion fi
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=6cm]{figures/Stability1}
+\includegraphics[width=5cm]{figures/Stability1}
 \end{center}
 \caption{Internal movement cohesion (no repulsion)} \label{methods:Stability1}
 \end{figure}
@@ -727,7 +727,7 @@ Table~\ref{tab:SampleReplusionPositive} shows the repulsion magnitude with a val
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=6cm]{figures/Stability2}
+\includegraphics[width=5cm]{figures/Stability2}
 \end{center}
 \caption{Internal movement repulsion} \label{methods:Stability2}
 \end{figure}
@@ -750,7 +750,7 @@ Figure~\ref{methods:Stability3} shows two agents close together but with cohesio
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=6cm]{figures/Stability3}
+\includegraphics[width=5cm]{figures/Stability3}
 \end{center}
 \caption{Internal movement cohesion and repulsion} \label{methods:Stability3}
 \end{figure}
@@ -773,7 +773,7 @@ Figure~\ref{methods:Stability4} shows two agents close together with $|k_cv_c|~=
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=6cm]{figures/Stability4}
+\includegraphics[width=5cm]{figures/Stability4}
 \end{center}
 \caption{Internal movement equilibrium} \label{methods:Stability4}
 \end{figure}
@@ -799,7 +799,7 @@ If we consider the equilibrium state (Figure~\ref{methods:Stability4}) the resul
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=6cm]{figures/StabilityNullVector}
+\includegraphics[width=5cm]{figures/StabilityNullVector}
 \end{center}
 \caption{Equilibrium with null vectors} \label{methods:StabilityNullVector}
 \end{figure}
@@ -974,21 +974,19 @@ Figure~\ref{coord:BaselineMagnitude1} shows the evolution of the metric in time.
 \end{figure}
 
 \section{Conclusion - metric comparison\label{metric:MagnitudeDistanceComparison}}
-The two metrics appear to be similar in terms of the measurement of the structure of a swarm. The main difference is in how these two metrics can be used when examining the state of the swarm.
+The two metrics (distance and \emph{cohesion/repulsion}) both measure the structure of a swarm in terms of the distribution of the agents and deviations from a mean. The \emph{cohesion/repulsion} metric also allows the state of the swarm to be identified.
 
-Both metrics identify the state of a swarm with respect to deviations in the distribution of the agents from a mean. 
+The distance metric is based upon the physical \emph{distribution} of the agents and the cohesion/repulsion metric is based upon the logical \emph{interaction} of the agents.
 
-The main difference in the metrics is that the distance metric is based upon the physical \emph{distribution} of the agents and the cohesion/repulsion metric is based upon the logical \emph{interaction} of the agents.
+The distance based metric provides an analysis of the distribution of the agents at a point in time and allows the agitation of the swarm to be assessed without considering the possible distribution of agents that the field effects \emph{could} produce.
 
-The distance based metric provides an analysis of the actual distribution of the agents at a point in time and allows the agitation of the swarm to be assessed without considering the possible distribution of agents that the field effects \emph{could} produce.
+The \emph{cohesion/repulsion} metric provides an indication of a swarm's potential movement. This is independent of the physical distribution of the agents within the swarm. The lack of dependence on the physical distribution allows the metric to be used in heterogeneous field effect swarms~\ref{additional:fieldsWork} where the physical distribution of agents may vary due to the varied field effect ranges. 
 
-The \emph{cohesion/repulsion} metric provides an indication of a swarm's potential movement. This is independent of the physical distribution of the agents within the swarm. The lack of dependence on the physical distribution allows the metric to be used in heterogeneous field effect swarms~\ref{additional:fieldsWork} where the physical distribution of agents may vary due to the variation in the field ranges. 
-
-In a homogeneous field effect swarm the two metrics provide a deeper evaluation of a swarm's structure and `potential'. Consider the following: the repulsion field is increased but the internal distances do not change as a result the \emph{cohesion/repulsion metric} rises: This indicates `something' is confining the swarm's distribution. This analysis could be used in identifying effective swarm distribution for the coverage of a sensor array as discussed by Ramaithitima et al.~\cite{RWBK:15}
+In a homogeneous field effect swarm the two metrics provide a deeper evaluation of a swarm's structure and `potential'. Consider the following: the repulsion field is increased but the internal distances do not change as a result the \emph{cohesion/repulsion metric} rises: This indicates `something' is confining the swarm's distribution and the swarm is filling a confined area. This analysis could be used in identifying effective swarm distribution for the coverage of a sensor array as discussed by Ramaithitima et al.~\cite{RWBK:15}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=8cm]{figures/FieldEffects2}
+\includegraphics[width=6cm]{figures/FieldEffects2}
 \end{center}
 \caption{Complex swarm interactions\label{additional:fieldsWork}}
 \end{figure}
@@ -1000,5 +998,17 @@ A possible adaptation to both of these areas of research would be to use the swa
 
 \bibliographystyle{plain}
 \bibliography{thesis}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/NEGrey}}]{Neil Eliot}
+is a Senior Lecturer at Northumbria University.  Neil was awarded his Ph.D. from Northumbria in 2017, his Pg.C. in 1994, and his B.Sc. in 1989 all in Computing. His research areas include swarm theory and cybersecurity. Neil is a Certified Ethical Hacker (CEH) and coordinator for the EC Council Academic alliance at Northumbria. He is also responsible for the delivery of several network cybersecurity modules in the area of operating systems integration, smart home technologies and modules that focus on cybersecurity threats in large scale system deployments. Prior to this Neil worked in the chemical industry and the NHS.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/DKGrey}}]{David Kendall}
+David Kendall has been a Senior Lecturer in Computing at Northumbria University since 1989, except for a brief period as a Lecturer in Computer Science at Durham University (2001-02). Previously, he was a Research Associate at Newcastle University (1987-89), following experience as a Senior Software Engineer in industry (1983-86). He has an M.A. degree in Literae Humaniores from Oxford University, where he studied at New College. He received M.Sc. and Ph.D. degrees in Computing Science from Newcastle University. His research interests are in the area of formal modelling and analysis of embedded systems. 
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/MBGrey}}]{Michael Brockway}
+has been a Senior Lecturer at Northumbria University for 17 years. His first degree is in pure and applied mathematics (1973-4), his Masters in mathematics (mathematical logic, category theory, 1975), and he has a PhD in computer science (formal methods for distributed embedded systems, 2010) from Northumbria University. Before that Michael worked in teaching and the computing industry.
+\end{IEEEbiography}
 
 \end{document}

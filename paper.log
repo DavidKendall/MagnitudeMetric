@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.1)  11 JAN 2018 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.1)  31 JAN 2018 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -353,12 +353,6 @@ ees, fish
 
 File: figures/FieldEffects.eps Graphic file (type eps)
 <figures/FieldEffects.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
-
-
-]
 Underfull \hbox (badness 4505) in paragraph at lines 612--613
 []\OT1/ptm/m/n/10 Figure 2[] shows the co-he-sion and re-pul-sion vec-tor
  []
@@ -368,6 +362,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 612--613
 
  []
 
+[1
+
+
+]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
@@ -385,7 +383,10 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
 File: figures/Stability5.eps Graphic file (type eps)
-<figures/Stability5.eps>
+ <figures/Stability5.eps>
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1629) in paragraph at lines 667--668
 []\OT1/ptm/m/n/10 Each agent within a swarm cal-cu-lates its \OT1/ptm/m/it/10 m
 ovement-
@@ -400,7 +401,7 @@ Underfull \hbox (badness 1902) in paragraph at lines 693--693
  []
 
 
-Underfull \vbox (badness 1210) has occurred while \output is active []
+Underfull \vbox (badness 5231) has occurred while \output is active []
 
  [2]
 File: figures/Stability1.eps Graphic file (type eps)
@@ -408,7 +409,7 @@ File: figures/Stability1.eps Graphic file (type eps)
 <figures/Stability1.eps>
 File: figures/Stability2.eps Graphic file (type eps)
  <figures/Stability2.eps>
-Underfull \vbox (badness 1931) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: figures/Stability3.eps Graphic file (type eps)
 
@@ -417,13 +418,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 772--773
 []\OT1/ptm/m/n/10 Figure 6[] shows two agents close to-gether with
  []
 
-[3]
 File: figures/Stability4.eps Graphic file (type eps)
- <figures/Stability4.eps>
+<figures/Stability4.eps> [3]
 File: figures/StabilityNullVector.eps Graphic file (type eps)
  <figures/StabilityNullVector.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no Ž in font ptmr7t!
@@ -444,32 +442,39 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 882--883
  []
 
 
-Underfull \vbox (badness 1337) has occurred while \output is active []
-
- [5]
 Underfull \hbox (badness 5302) in paragraph at lines 907--908
 []\OT1/ptm/m/n/10 Section III[] dis-cussed cal-cu-la-tion of re-sul-tant co-he-
 
  []
 
+[5]
 File: figures/BaselineMagnitude1.eps Graphic file (type eps)
-<figures/BaselineMagnitude1.eps>
+ <figures/BaselineMagnitude1.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 971--972
  [] 
  []
 
 File: figures/FieldEffects2.eps Graphic file (type eps)
-<figures/FieldEffects2.eps>
-Underfull \vbox (badness 1424) has occurred while \output is active []
-
- [6]
-(./paper.bbl
+<figures/FieldEffects2.eps> [6] (./paper.bbl
 Underfull \hbox (badness 1783) in paragraph at lines 10--15
 []\OT1/ptm/m/n/8 Panayiotis An-dreou, Demetrios Zeinalipour-Yazti, Maria An-dre
 ou,
  []
 
-) [7] (./paper.aux)
+)
+File: Images/NEGrey.eps Graphic file (type eps)
+ <Images/NEGrey.eps>
+File: Images/NEGrey.eps Graphic file (type eps)
+ <Images/NEGrey.eps>
+File: Images/DKGrey.eps Graphic file (type eps)
+ <Images/DKGrey.eps>
+File: Images/DKGrey.eps Graphic file (type eps)
+
+<Images/DKGrey.eps>
+File: Images/MBGrey.eps Graphic file (type eps)
+ <Images/MBGrey.eps>
+File: Images/MBGrey.eps Graphic file (type eps)
+ <Images/MBGrey.eps> [7] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -478,12 +483,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5736 strings out of 494954
- 80152 string characters out of 6181004
- 149790 words of memory out of 5000000
- 8958 multiletter control sequences out of 15000+600000
+ 5743 strings out of 494954
+ 80240 string characters out of 6181004
+ 150790 words of memory out of 5000000
+ 8961 multiletter control sequences out of 15000+600000
  35030 words of font info for 92 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,11n,38p,2380b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,38p,2380b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (7 pages, 52348 bytes).
+Output written on paper.dvi (7 pages, 54852 bytes).
