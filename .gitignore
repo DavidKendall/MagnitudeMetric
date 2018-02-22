@@ -1,3 +1,9 @@
 *.*~
 *.ps
 *.pdf
+*.blg
+*.aux
+*.log
+*.vrb
+*.dvi
+
